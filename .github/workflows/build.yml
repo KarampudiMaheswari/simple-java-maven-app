@@ -33,5 +33,6 @@ jobs:
     needs: test
     steps:
       - uses: actions/checkout@v2
+      - run: chmod +x ./jenkins/scripts/test.sh
       - run: ./jenkins/scripts/test.sh
  

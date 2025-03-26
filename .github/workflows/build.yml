@@ -33,5 +33,5 @@ jobs:
     needs: test
     steps:
       - uses: actions/checkout@v2
-      - run: ./jenkins/scripts/deliver.sh
+      - run: ./jenkins/scripts/test.sh
  

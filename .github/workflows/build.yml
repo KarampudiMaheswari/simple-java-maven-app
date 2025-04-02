@@ -12,6 +12,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - run: mvn -B -DskipTests clean package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: built-jar
+          path: target/*.jar
 
   test:
     runs-on: ubuntu-latest

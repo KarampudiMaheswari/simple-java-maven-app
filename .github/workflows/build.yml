@@ -33,7 +33,7 @@ jobs:
     needs: test
     steps:
       - name: print working Directory
-      - run: pwd
+        run: pwd
      
   deliver:
     runs-on: ubuntu-latest

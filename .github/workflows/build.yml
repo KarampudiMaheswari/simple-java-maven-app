@@ -29,8 +29,12 @@ jobs:
           path: target/surefire-reports/*.xml
           
   find-path: 
+    runs-on: ubuntu-latest
+    needs: test
     steps:
-    - run: pwd
+      - name: print working Directory
+      - run: pwd
+     
   deliver:
     runs-on: ubuntu-latest
     needs: test
